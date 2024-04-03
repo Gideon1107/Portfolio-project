@@ -18,6 +18,7 @@
 <script src="https://kit.fontawesome.com/d5a965c6eb.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Navigation -->
   <nav>
     <ul class="sidebar">
       <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
@@ -35,11 +36,12 @@
       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
     </ul>
   </nav>
+  <!-- Hero Section-->
   <section class="hero-section">
     <div class="hero">
-      <div>
+      <div id="hero-container">
           <h1>Software Developer</h1>
-          <p>Hi, I'm Gideon Ayeni. A passionate Software Developer based in United Kingdom</p>
+          <p>Hi, I'm Gideon. A passionate Software Developer based in United Kingdom</p>
           <ul id="socials">
             <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href=""><i class="fa-brands fa-square-github"></i></a></li>
@@ -51,16 +53,85 @@
             <li><a href="">HTML <i class="fa-brands fa-html5"></i></a></li>
             <li><a href="">CSS <i class="fa-brands fa-css3-alt"></i></a></li>
             <li><a href="">PYTHON <i class="fa-brands fa-python"></i></a></li>
-            <li><a href="">FLASK</a></li>
+            <li><a href="">FLASK <i class="fa-brands"><img src="./images/flask.svg" alt="" width="18px" height="18px"></i></a></li>
             <li><a href="">JAVASCRIPT <i class="fa-brands fa-js"></i></a></li>
           </ul>
       </div>
       <div>
-        <img src="./images/avatar.jpg" alt="my picture">
+        <img src="./images/avatar.jpg" alt="my picture" class="avatar">
       </div>
     </div>
   </section>
+<!-- About Section -->
+<section class="about-section">
+  <div class="about">
+    <div>
+      <img src="./images/laptop-about.jpg" alt="">
+    </div>
 
+    <div>
+      <h1>ABOUT ME</h1>
+      <h2>Aspiring Full-stack Developer based in United Kingdom.</h2>
+      <p>Hey there!, My name is Gideon Ayeni, and I'm a Software developer. My passion is to create and develop a clean software, UI/UX and a good back-end server for users. My main stack currently are HTML,CSS in combination with Bootstrap, while using Flask as my back-end.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section">
+  <div class="projects">
+    <div id="projects-header">
+      <p id="section-title">Portfolio</p>
+      <img src="./images/devsblog.png" alt="">
+    </div>
+
+    <div>
+      <h1>DEVS BLOG</h1>
+      <p>Devs blog is a platform for developers to share and offer insights, tips, and perhaps a dash of inspiration to fellow developers, whether seasoned pros or enthusiastic beginners.</p>
+      <ul id="projects-stack">
+        <li><a href="">Bootstrap</a></li>
+        <li><a href="">Flask</a></li>
+      </ul>
+      <ul id="projects-access">
+        <li><a href="">Code <i class="fa-brands fa-github"></i></a></li>
+        <li><a href="">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="contact">
+    <div>
+      <h1>CONTACT</h1>
+      <p>Don't be a stranger! Contact me!</p>
+    </div>
+
+    <div id="form-container">
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+        
+        <input type="submit" value="Send Message" class="button">
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<section>
+  <div class="footer">
+    <p>Copyright © 2024. All rights are reserved</p>
+  </div>
+</section>
   <script src="script.js"></script>
 </body>
 </html>
