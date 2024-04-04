@@ -19,3 +19,7 @@ function hideSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
   }
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    alert('Message sent!');
+  });
