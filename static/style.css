@@ -57,8 +57,8 @@ nav li:first-child{
   right: 0;
   height: 33vh;
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 1);
+  /* backdrop-filter: blur(12px); */
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
   display: none;
@@ -524,7 +524,7 @@ form #name, form #email, form #message:hover{
   }
   .hero{
     flex-direction: column;
-    padding: 50px;
+    padding: 90px 50px 50px 50px; 
   }
   .hero #stacks{
     flex-direction: column;
@@ -576,7 +576,7 @@ form #name, form #email, form #message:hover{
 }
 
 .hero{
-  padding: 30px;
+  padding: 90px 30px 30px 30px;
 }
 
 }
