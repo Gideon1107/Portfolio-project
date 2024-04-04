@@ -20,6 +20,6 @@ function hideSidebar(){
     sidebar.style.display = 'none'
   }
 
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    alert('Message sent!');
-  });
+  // document.getElementById('contact-form').addEventListener('submit', function(event) {
+  //   alert('Message sent!');
+  // });

@@ -292,12 +292,17 @@ nav li:first-child{
 .projects #projects-access li a i{
   padding: 10px;
 }
-.projects #projects-access li a:hover{
+.projects #projects-access li a{
   border-radius: 10px;
   background-color: #222831;
   color: #EEEEEE;
   /* transition: 1s ease-in-out; */
 }
+
+/* .projects #projects-access li a:hover{
+  background-color: #76ABAE;
+  color: #222831;
+} */
 
 
 .projects li{
@@ -538,6 +543,11 @@ form #name, form #email, form #message:hover{
     padding-top: 60px;
   }
 
+  #projects-access a{
+    padding: 0 20px;
+  }
+
+
 }
 
 @media(max-width: 400px){
@@ -560,7 +570,14 @@ form #name, form #email, form #message:hover{
 }
 
 .projects #projects-access li a{
-  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100px;
+}
+
+.projects #projects-access{
+  flex-direction: column;
+  gap: 20px;
 }
 
 .hero .avatar{
@@ -578,6 +595,12 @@ form #name, form #email, form #message:hover{
 .hero{
   padding: 90px 30px 30px 30px;
 }
+
+#projects-access li{
+  width: 120px;
+}
+
+
 
 }
 
