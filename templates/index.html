@@ -41,7 +41,7 @@
     <div class="hero">
       <div id="hero-container">
           <h1>Software Developer</h1>
-          <p>Hi, I'm Gideon. A passionate Software Developer based in United Kingdom</p>
+          <p>Hi, I'm Gideon. A passionate Full-Stack Software Developer based in United Kingdom</p>
           <ul id="socials">
             <li><a href="https://www.linkedin.com/in/gideon-o-a-5a0a4b23b/"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="https://github.com/Gideon1107"><i class="fa-brands fa-square-github"></i></a></li>
@@ -51,29 +51,32 @@
 
           <span><p>Tech Stack :</p></span>
           <ul id="stacks">
-            <li><a href="">HTML <i class="fa-brands fa-html5"></i></a></li>
-            <li><a href="">CSS <i class="fa-brands fa-css3-alt"></i></a></li>
+            <!-- <li><a href="">HTML <i class="fa-brands fa-html5"></i></a></li> -->
+            <!-- <li><a href="">CSS <i class="fa-brands fa-css3-alt"></i></a></li> -->
+            <li><a href="">REACT.JS <i class="fa-brands fa-react"></i></a></li>
+            <li><a href="">NODE.JS <i class="fa-brands fa-node-js"></i></a></li>
             <li><a href="">PYTHON <i class="fa-brands fa-python"></i></a></li>
             <li><a href="">FLASK <i class="fa-brands"><img src="{{url_for('static', filename='/images/flask.svg')}}" alt="" width="18px" height="18px"></i></a></li>
             <li><a href="">JAVASCRIPT <i class="fa-brands fa-js"></i></a></li>
           </ul>
       </div>
       <div>
-        <img src="{{url_for('static', filename='images/avatar.jpg')}}" alt="my picture" class="avatar">
+        <img src="{{url_for('static', filename='images/avatar.jpg')}}" alt="avatar-image" class="avatar">
       </div>
     </div>
   </section>
+
 <!-- About Section -->
 <section id="about-section">
   <div class="about">
     <div>
-      <img src="{{url_for('static', filename= 'images/laptop-about.jpg')}}" alt="">
+      <img src="{{url_for('static', filename= 'images/laptop-about.jpg')}}" alt="about-image">
     </div>
 
     <div>
       <h1>ABOUT ME</h1>
       <h2>Full-stack Developer based in United Kingdom.</h2>
-      <p>Hey there!, My name is Gideon Ayeni, and I'm a Software developer. My passion is to create and develop a clean software, UI/UX and a scalable back-end server for users. My main stack currently are HTML,CSS in combination with Bootstrap, while using Flask as my back-end.</p>
+      <p>Hey there!, My name is Gideon Ayeni, and I'm a Full-Stack Software developer. My passion is to design and develop a clean User Interface, User Experience and a scalable back-end server. My main stack currently are React.js and Node.js. I'm also proficient in using Python Flask for the back-end depending on the project requirement.</p>
     </div>
   </div>
 </section>
@@ -83,7 +86,7 @@
   <div class="projects">
     <div id="projects-header">
       <p id="section-title">Portfolio</p>
-      <img src="{{url_for('static', filename='images/devsblog.png')}}" alt="">
+      <img src="{{url_for('static', filename='images/devsblog.png')}}" alt="project-image">
     </div>
 
     <div>
@@ -107,19 +110,19 @@
   <div class="contact">
     <div>
       <h1>CONTACT</h1>
-      <p>Don't be a stranger! Contact me!</p>
+      <p>Get in touch!</p>
     </div>
 
     <div id="form-container">
       <form action="{{url_for('contact')}}", method="post" id="contact-form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="text" id="name-input" name="name"  required>
         
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="email" id="email-input" name="email" required>
         
         <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Message" required></textarea>
+        <textarea id="message" name="message"  placeholder="Enter your message..."></textarea>
         
         <input type="submit" value="Send Message" class="button">
       </form>

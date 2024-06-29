@@ -150,7 +150,7 @@ nav li:first-child{
 }
 
 .hero #stacks li a{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
@@ -172,7 +172,7 @@ nav li:first-child{
   gap: 15%;
   justify-content: center;
   align-items: center;
-  background-color: #EEEEEE;
+  background-color: #fff;
   padding-bottom: 90px;
 }
 
@@ -235,7 +235,8 @@ nav li:first-child{
   align-items: center;
   /* background-color: #b3d3d5; */
   /* background-color: #76ABAE; */
-  background-color: #cde0e2;
+  /* background-color: #cde0e2; */
+  background-color: #ffffffb3;
   padding-bottom: 90px;
 }
 
@@ -269,6 +270,7 @@ nav li:first-child{
   font-size: 40px;
   padding-bottom: 50px;
   padding-left: 20px;
+  color: #76ABAE;
 }
 .projects #projects-stack{
   width: 100%;
@@ -290,29 +292,30 @@ nav li:first-child{
 }
 
 .projects #projects-access li a i{
-  padding: 10px;
+  padding: 5px;
 }
 .projects #projects-access li a{
-  border-radius: 10px;
-  background-color: #222831;
-  color: #EEEEEE;
-  /* transition: 1s ease-in-out; */
+  border-radius: 2px;
+  background-color: #fff;
+  color: #222831;
+  border: 1px solid #76ABAE;
+  transition: background-color 1s ease;
 }
 
-/* .projects #projects-access li a:hover{
+.projects #projects-access li a:hover{
   background-color: #76ABAE;
-  color: #222831;
-} */
+  color: #fff;
+}
 
 
 .projects li{
-  height: 50px;
+  height: 42px;
 }
 .projects a{
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   height: 100%;
-  padding: 0 30px;
+  padding: 0 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -332,23 +335,24 @@ nav li:first-child{
   align-items: flex-start;
   /* background-color: #b3d3d5; */
   /* background-color: #76ABAE; */
-  background-color: #76ABAE;
+  /* background-color: #76ABAE; */
+  background-color: #fff;
   padding-bottom: 90px;
-  margin-top: 2px;
+  /* margin-top: 2px; */
 }
 
 .contact h1{
   font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
-  color: #222831;
+  color: #76ABAE;
   padding-top: 0;
   padding-bottom: 10px;
 }
 
 .contact p{
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
 
 }
 
@@ -365,52 +369,62 @@ form label{
   padding-bottom: 5px;
   /* padding-left: 5px; */
   color: #222831;
-  font-weight: 500;
+  font-weight: 300;
 }
 
-form #name, form #email{
+form #name-input, form #email-input{
   width: 100%;
   height: 20px;
   margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid;
-  border: none;
+  border-radius: 1px;
+  border: 1px solid #76ABAE;
   padding: 10px;
   background-color: #fff;
-  color: #222831;
+  /* color: #222831; */
   font-size: 15px;
   text-align: left;
   font-family: "Poppins", sans-serif;
 }
 
+
+
 form #message{
   width: 100%;
   height: 190px;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 1px;
   border: 1px solid #96bfc1;
   padding: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #222831;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
+
+form #message::placeholder{
+  color: #31363F;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+
 
 form .button{
   width: 130px;
   height: 40px;
   padding: auto;
-  border-radius: 8px;
+  border-radius: 2px;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   background-color: transparent;
-  border: 1px solid #31363F;
+  border: 1px solid #76ABAE;
   color: #222831;
+  transition: background-color 1s ease-out;
 }
 
 form .button:hover{
   color: white;
-  background-color: #222831;
+  background-color: #76ABAE;
 }
 
 form #name, form #email, form #message:hover{
@@ -423,13 +437,13 @@ form #name, form #email, form #message:hover{
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #31363F;
+  background-color: #222831;
 }
 
 .footer p{
   color: #76ABAE;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 
@@ -461,6 +475,11 @@ form #name, form #email, form #message:hover{
 
   .footer p{
     font-size: 10px;
+  }
+
+  .hero .avatar{
+    width: 170px;
+    height: 170px;
   }
   
 }
