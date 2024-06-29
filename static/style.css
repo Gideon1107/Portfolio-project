@@ -386,6 +386,10 @@ form #name-input, form #email-input{
   font-family: "Poppins", sans-serif;
 }
 
+form #name-input:focus, form #email-input:focus, form #message:focus{
+  outline: none;
+}
+
 
 
 form #message{
@@ -427,9 +431,9 @@ form .button:hover{
   background-color: #76ABAE;
 }
 
-form #name, form #email, form #message:hover{
+/* form #name, form #email, form #message:hover{
   border-color: #222831;
-} 
+}  */
 
 
 .footer{
