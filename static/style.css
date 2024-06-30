@@ -346,13 +346,14 @@ nav li:first-child{
   font-size: 40px;
   color: #76ABAE;
   padding-top: 0;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .contact p{
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 300;
+  padding-bottom: 20px;
 
 }
 
@@ -454,19 +455,20 @@ form .button:hover{
 
 @media(max-width: 600px){
   .contact{
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 30px;
     
   }
   form{
     justify-content: center;
   }
-  form #name, form #email{
-    width: 250px;
+  form #name-input, form #email-input{
+    width: 90%;
   }
 
   form #message{
-    width: 250px;
+    width: 90%;
   }
 
   #form-container{
