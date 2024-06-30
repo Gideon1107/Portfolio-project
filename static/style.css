@@ -458,6 +458,7 @@ form .button:hover{
     /* justify-content: center;
     align-items: center; */
     padding: 30px;
+    padding-bottom: 50px;
     
   }
   form{
@@ -490,6 +491,10 @@ form .button:hover{
 
   form .button{
     font-weight: 300;
+  }
+
+  .projects #section-title{
+    padding-left: 0px;
   }
   
 }
@@ -546,14 +551,14 @@ form .button:hover{
   }
   .hero{
     flex-direction: column;
-    padding: 90px 50px 50px 50px; 
+    padding: 90px 50px 50px 30px; 
   }
   .hero #stacks{
     flex-direction: column;
     padding-bottom: 50px;
   }
   .about{
-    padding: 50px;
+    padding: 30px;
   }
 
   .hero span p{
@@ -562,6 +567,10 @@ form .button:hover{
 
   #projects-access a{
     padding: 0 20px;
+  }
+
+  .projects{
+    padding: 30px;
   }
 
 
@@ -615,6 +624,11 @@ form .button:hover{
 
 #projects-access li{
   width: 120px;
+}
+
+.hero .avatar{
+  width: 170px;
+  height: 170px;
 }
 
 
